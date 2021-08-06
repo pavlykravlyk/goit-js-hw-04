@@ -61,11 +61,11 @@ function composeMessage(customerName) {
 }
 // Пиши код ниже этой строки
 
-// const pizzaPalaceComposer = composeMessage;
-// const pizzaPalaceMessage = pizzaPalaceComposer('Манго');
+const pizzaPalaceComposer = composeMessage.bind(pizzaPalace);
+const pizzaPalaceMessage = pizzaPalaceComposer('Манго');
 
-// const burgerShackComposer = composeMessage;
-// const burgerShackMessage = burgerShackComposer('Поли');
+const burgerShackComposer = composeMessage.bind(burgerShack);
+const burgerShackMessage = burgerShackComposer('Поли');
 
 
 
